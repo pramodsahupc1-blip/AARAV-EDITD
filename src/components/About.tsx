@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { SectionHeading } from "./ui/SectionHeading";
 import { Download } from "lucide-react";
+import profileImg from "../assets/images/regenerated_image_1782051632260.jpg";
 
 export function About() {
   const skills = [
@@ -31,20 +32,20 @@ export function About() {
             <div className="relative shrink-0">
               <div className="w-48 h-48 md:w-56 md:h-56 rounded-full p-2 bg-gradient-brand">
                 <img 
-                  src="/logo.jpg" 
+                  src={profileImg} 
                   onError={(e) => { e.currentTarget.src = "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&q=80"; }}
-                  alt="Aarav Sahu" 
+                  alt="Aarav" 
                   className="w-full h-full object-cover rounded-full border-4 border-brand-dark"
                 />
               </div>
-              <div className="absolute bottom-2 right-2 w-12 h-12 rounded-full glass flex items-center justify-center text-red-500 shadow-lg">
+              <div className="absolute bottom-2 right-2 w-12 h-12 rounded-full glass flex items-center justify-center text-blue-500 shadow-lg">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" className="w-6 h-6 grayscale hover:grayscale-0 transition-all"/>
               </div>
             </div>
             
             <div>
               <h3 className="text-3xl font-sans font-bold text-white mb-2">
-                I'm <span className="text-red-500">Aarav</span> Sahu
+                I'm <span className="text-blue-500">Aarav</span>
               </h3>
               <p className="text-xl text-gray-300 font-medium mb-4">AI Editor & Software Developer</p>
               <p className="text-gray-400 mb-8 max-w-md">

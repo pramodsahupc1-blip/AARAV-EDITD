@@ -7,28 +7,40 @@
   --color-brand-dark: #050505;
   --color-brand-card: rgba(255, 255, 255, 0.05);
   
-  --color-brand-purple: #ef4444;
-  --color-brand-orange: #b91c1c;
+  --color-brand-purple: #9333ea;
+  --color-brand-blue: #3b82f6;
 }
 
 @layer base {
   body {
     @apply bg-brand-dark text-white font-sans;
   }
+  
+  :root.high-contrast {
+    --color-brand-dark: #000000;
+    --color-brand-card: rgba(255, 255, 255, 0.15);
+  }
 }
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 bg-clip-text text-transparent;
   }
   .bg-gradient-brand {
-    @apply bg-gradient-to-r from-red-600 to-red-800;
+    @apply bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600;
   }
   .glass {
     @apply bg-white/5 backdrop-blur-xl border border-white/10;
   }
   .glass-card {
     @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
   }
 }
 

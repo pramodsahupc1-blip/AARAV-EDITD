@@ -8,36 +8,29 @@ export function Services() {
       icon: Film,
       title: "Video Editing",
       description: "Professional video editing for YouTube, Reels, Shorts & more.",
-      color: "bg-red-600 text-white",
-      shadow: "group-hover:shadow-[0_0_30px_rgba(220,38,38,0.3)]"
+      color: "bg-blue-600 text-white",
+      shadow: "group-hover:shadow-[0_0_30px_rgba(37,99,235,0.3)]"
     },
     {
       icon: ImageIcon,
       title: "Thumbnail Design",
       description: "Eye-catching thumbnails that increase CTR and engagement.",
-      color: "bg-red-500 text-white",
-      shadow: "group-hover:shadow-[0_0_30px_rgba(239,68,68,0.3)]"
+      color: "bg-purple-500 text-white",
+      shadow: "group-hover:shadow-[0_0_30px_rgba(168,85,247,0.3)]"
     },
     {
       icon: Smartphone,
       title: "Android App Development",
       description: "Custom Android apps with modern UI & optimal performance.",
-      color: "bg-red-700 text-white",
-      shadow: "group-hover:shadow-[0_0_30px_rgba(185,28,28,0.3)]"
+      color: "bg-blue-700 text-white",
+      shadow: "group-hover:shadow-[0_0_30px_rgba(29,78,216,0.3)]"
     },
     {
       icon: Globe,
       title: "Website Development",
       description: "Responsive, fast & SEO-friendly websites for your brand.",
-      color: "bg-red-500 text-white",
-      shadow: "group-hover:shadow-[0_0_30px_rgba(239,68,68,0.3)]"
-    },
-    {
-      icon: Sparkles,
-      title: "AI Content Creation",
-      description: "AI-powered content creation for images, videos & captivating captions.",
-      color: "bg-gradient-brand text-white",
-      shadow: "group-hover:shadow-[0_0_30px_rgba(220,38,38,0.3)]"
+      color: "bg-indigo-500 text-white",
+      shadow: "group-hover:shadow-[0_0_30px_rgba(99,102,241,0.3)]"
     }
   ];
 

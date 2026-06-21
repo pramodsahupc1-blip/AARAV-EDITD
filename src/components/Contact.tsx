@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { SectionHeading } from "./ui/SectionHeading";
-import { Instagram, Mail, Phone, SendHorizontal } from "lucide-react";
+import { Instagram, Mail, Phone, SendHorizontal, MessageCircle } from "lucide-react";
 
 export function Contact() {
   const contactMethods = [
@@ -8,22 +8,22 @@ export function Contact() {
       icon: Instagram,
       title: "Instagram",
       value: "@aarav_edits_001",
-      color: "text-red-500",
-      bg: "bg-red-500/10"
+      color: "text-purple-500",
+      bg: "bg-purple-500/10"
     },
     {
       icon: Mail,
       title: "Email",
       value: "aaravedits001@gmail.com",
-      color: "text-red-600",
-      bg: "bg-red-600/10"
+      color: "text-blue-500",
+      bg: "bg-blue-500/10"
     },
     {
-      icon: Phone,
+      icon: MessageCircle,
       title: "WhatsApp",
-      value: "+91 12345 67890",
-      color: "text-red-500",
-      bg: "bg-red-500/10"
+      value: "9040845838",
+      color: "text-green-500",
+      bg: "bg-green-500/10"
     }
   ];
 
@@ -68,18 +68,18 @@ export function Contact() {
                 <input 
                   type="text" 
                   placeholder="Your Name" 
-                  className="w-full bg-[#050505] border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-red-500 transition-colors"
+                  className="w-full bg-[var(--color-brand-dark)] border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-red-500 transition-colors"
                 />
                 <input 
                   type="email" 
                   placeholder="Your Email" 
-                  className="w-full bg-[#050505] border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-red-500 transition-colors"
+                  className="w-full bg-[var(--color-brand-dark)] border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-red-500 transition-colors"
                 />
               </div>
               <textarea 
                 rows={5}
                 placeholder="Your Message" 
-                className="w-full bg-[#050505] border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-red-500 transition-colors resize-none"
+                className="w-full bg-[var(--color-brand-dark)] border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-red-500 transition-colors resize-none"
               />
               <button 
                 type="submit"

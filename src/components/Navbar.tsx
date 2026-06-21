@@ -1,12 +1,15 @@
 import { motion } from "motion/react";
 import { Menu, X, Instagram, Youtube, Github, Send } from "lucide-react";
 import { useState, useEffect } from "react";
+import logoImg from "../assets/images/regenerated_image_1782051637558.jpg";
 
 const navLinks = [
   { name: "Home", href: "#home" },
-  { name: "Portfolio", href: "#portfolio" },
   { name: "Services", href: "#services" },
+  { name: "Portfolio", href: "#portfolio" },
   { name: "About", href: "#about" },
+  { name: "Pricing", href: "#pricing" },
+  { name: "Testimonials", href: "#testimonials" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -26,9 +29,9 @@ export function Navbar() {
         
         {/* Logo */}
         <a href="#home" className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-red-600 via-red-500 to-red-800 p-[2px]">
-            <div className="w-full h-full rounded-full bg-[#050505] flex items-center justify-center text-xs font-bold overflow-hidden">
-               <img src="/logo.jpg" onError={(e) => { e.currentTarget.src = "https://images.unsplash.com/photo-1543610892-0b1f7e6d8c1c?w=100&h=100&fit=crop&q=80"; }} alt="Logo" className="w-full h-full object-cover" />
+          <div className="w-10 h-10 rounded-full bg-gradient-brand p-[2px]">
+            <div className="w-full h-full rounded-full bg-[var(--color-brand-dark)] flex items-center justify-center text-xs font-bold overflow-hidden">
+               <img src={logoImg} onError={(e) => { e.currentTarget.src = "https://images.unsplash.com/photo-1543610892-0b1f7e6d8c1c?w=100&h=100&fit=crop&q=80"; }} alt="Logo" className="w-full h-full object-cover" />
             </div>
           </div>
           <span className="font-black text-xl tracking-tighter text-white">
@@ -72,7 +75,7 @@ export function Navbar() {
               key={link.name} 
               href={link.href} 
               onClick={() => setMobileMenuOpen(false)}
-              className="text-lg font-medium hover:text-brand-orange transition-colors"
+              className="text-lg font-medium hover:text-blue-500 transition-colors"
             >
               {link.name}
             </a>
